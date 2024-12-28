@@ -60,7 +60,7 @@
     { "tag": "🇯🇵 日本节点", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"] }] },
     { "tag": "🇺🇲 美国节点", "type": "selector", "outbounds": ["{all}"], "filter": [{ "action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"] }, { "action": "exclude", "keywords": ["香港|港|HK|hk|HongKong"] }] },
     { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{ "action": "exclude", "keywords": ["香港|日本|美国|Hysteria"] }], "url": "http://connect.rom.miui.com/generate_204", "interval": "10m", "tolerance": 150 },
-    { "tag": "GLOBAL", "type": "selector", "outbounds": [ "🎯 全球直连", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇸 美国节点", "🐸 手动切换" ] },
+    { "tag": "GLOBAL", "type": "selector", "outbounds": [ "🎯 全球直连", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "🐸 手动切换" ] },
     { "tag": "🛑 广告拦截", "type": "block" },
     { "tag": "🎯 全球直连", "type": "direct" }
   ],
