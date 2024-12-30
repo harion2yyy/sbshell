@@ -45,12 +45,13 @@
     "type": "tproxy",
     "tag": "tproxy-in",
     "listen": "0.0.0.0",
-    "listen_port": 7895
+    "listen_port": 7895,
     "users": [
       {
         "username": "h3y",
         "password": "he26622609?"
       }
+    ]
   },
   {
     "type": "mixed",
