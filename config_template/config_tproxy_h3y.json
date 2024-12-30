@@ -24,19 +24,19 @@
       {
         "tag": "dns_direct",
         "address": "https://dns.alidns.com/dns-query",
-        "address_strategy": "ipv4_only",
+        "address_strategy": "ali-udp-dns",
         "strategy": "ipv4_only",
         "detour": "🎯 全球直连"
       },
       {
         "tag": "dns_proxy",
         "address": "https://cloudflare-dns.com/dns-query",
-        "address_strategy": "ipv4_only",
+        "address_strategy": "ali-udp-dns",
         "strategy": "ipv4_only",
         "detour": "🚀 节点选择"
       },
       {
-        "tag": "dns-resolver",
+        "tag": "ali-udp-dns",
         "address": "223.5.5.5",
         "detour": "direct"
       }
