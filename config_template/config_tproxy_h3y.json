@@ -313,13 +313,13 @@
         "url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/proxy.srs",
         "download_detour": "🎯 全球直连"
       },
-	  { 
-		"tag": "geosite-chat", 
-		"type": "remote", 
-		"format": "binary", 
-		"url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs", 
-		"download_detour": "🎯 全球直连" 
-	  },
+      { 
+	"tag": "geosite-chat", 
+	"type": "remote", 
+	"format": "binary", 
+	"url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs", 
+	"download_detour": "🎯 全球直连" 
+      },
       {
         "tag": "geosite-google",
         "type": "remote",
