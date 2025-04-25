@@ -276,7 +276,7 @@
             "outbound": "🎯 全球直连"
           },
           {
-            "rule_set": "ads",
+            "rule_set": ["ads"],
             "action": "reject",
             "method": "drop"
           },
