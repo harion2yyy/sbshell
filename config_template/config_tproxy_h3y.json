@@ -281,6 +281,11 @@
             "outbound": "🎯 全球直连"
           },
           {
+            "rule_set": "ads",
+            "action": "reject",
+            "method": "drop"
+          },
+          {
             "rule_set": [
               "geosite-private",
               "geoip-private"
