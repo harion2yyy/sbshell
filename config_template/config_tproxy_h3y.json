@@ -69,7 +69,6 @@
     {"tag": "🇺🇲 美国节点", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]},
     {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["Expire|Traffic|300 GB"]}], "url": "http://connect.rom.miui.com/generate_204", "interval": "10m", "tolerance": 150},
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🎯 全球直连", "🚀 节点选择", "🐸 手动切换"]},
-    {"tag": "block", "type": "block"},
     {"tag": "🎯 全球直连", "type": "direct"}
   ],
   "route": {
