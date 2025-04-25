@@ -115,4 +115,4 @@
 	  { "tag": "networktest", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cc/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset-compatible/networktest.srs", "download_detour": "🎯 全球直连" }
     ]
   }
-}
+}]}
