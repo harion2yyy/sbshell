@@ -58,11 +58,6 @@
         "server": "dns_proxy"
       },
       {
-        "rule_set": "ads",
-        "action": "reject",
-        "method": "drop"
-      },
-      {
         "rule_set": "geosite-cn",
         "server": "dns_direct"
       },
