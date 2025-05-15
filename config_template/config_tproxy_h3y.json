@@ -264,6 +264,7 @@
       },
       {
         "rule_set": [
+	  "geosite-category-media",
           "geosite-proxymedia",
 	  "geosite-netflix",
 	  "geosite-netflav",
@@ -336,6 +337,13 @@
         "download_detour": "🎯 全球直连"
       },
       {
+        "tag": "geosite-category-media",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-media.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
         "tag": "geosite-proxymedia",
         "type": "remote",
         "format": "binary",
@@ -346,7 +354,7 @@
         "tag": "geosite-netflix",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
+        "url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/netflix.srs",
         "download_detour": "🎯 全球直连"
       },
       {
