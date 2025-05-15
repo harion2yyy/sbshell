@@ -1,6 +1,6 @@
 {
   "log": {
-    "level": "error",
+    "level": "info",
     "timestamp": true
   },
   "experimental": {
@@ -10,9 +10,9 @@
       "store_rdrc": true
     },
     "clash_api": {
-      "external_controller": "0.0.0.0:9090",
-      "external_ui": "ui",
-      "external_ui_download_url": "https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
+      "external_controller": "0.0.0.0:9095",
+      "external_ui": "/etc/sing-box/ui",
+      "external_ui_download_url": "https://ghcf.harion2y.cc/https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
       "access_control_allow_origin": "http://127.0.0.1"
     }
   },
@@ -59,25 +59,22 @@
   },
   "inbounds": [
     {
-      "type": "tun",
-      "address": [
-        "172.18.0.1/30",
-        "fdfe:dcba:9876::1/126"
-      ],
-      "interface_name": "tun0",
-      "auto_route": true,
-      "auto_redirect": true,
-      "strict_route": true
-    },
-    {
-      "type": "redirect",
-      "listen": "::",
-      "listen_port": 7891
-    },
-    {
       "type": "tproxy",
+      "tag": "tproxy-in",
+      "listen": "0.0.0.0",
+      "listen_port": 7895
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
       "listen": "::",
-      "listen_port": 1536
+      "listen_port": 7890,
+      "users": [
+        {
+          "username": "h3y",
+          "password": "he26622609?"
+        }
+      ]
     }
   ],
   "outbounds": [
@@ -218,7 +215,7 @@
         "tag": "AWAvenue-Ads-Rule",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox-regex.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox-regex.srs"
       },
       {
         "tag": "ai_non_ip",
@@ -230,13 +227,13 @@
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs"
       }
     ]
   }
