@@ -215,10 +215,6 @@
       ]
     },
     {
-      "tag": "🛑 广告拦截",
-      "type": "block"
-    },
-    {
       "tag": "🎯 全球直连",
       "type": "direct"
     }
@@ -229,6 +225,7 @@
     "default_mark": 666,
     "rules": [
       {
+	"inbound": "tproxy-in",
         "action": "sniff"
       },
       {
@@ -258,7 +255,8 @@
         "rule_set": [
           "ads"
         ],
-        "outbound": "🛑 广告拦截"
+        "action": "reject",
+	"method": "drop"
       },
       {
         "rule_set": "geosite-private",
