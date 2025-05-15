@@ -266,6 +266,7 @@
         "rule_set": [
           "geosite-proxymedia",
 	  "geosite-netflix",
+	  "geosite-netflav",
           "geoip-netflix"
         ],
         "outbound": "🎥 海外媒体"
@@ -346,6 +347,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "geosite-netflav",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflav.srs",
         "download_detour": "🎯 全球直连"
       },
       {
