@@ -346,7 +346,7 @@
         "type": "remote",
         "format": "binary",
         "url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
-        "download_detour": "🎯 全球直连"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-apple",
