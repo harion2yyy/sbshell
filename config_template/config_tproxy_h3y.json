@@ -26,11 +26,12 @@
       {"tag":"ali-udp-dns","address":"223.5.5.5","detour":"🎯 全球直连"}
     ],
     "rules": [
-      {"outbound":"any","server":"dns_direct","disable_cache":true},
-	  {"clash_mode":"Direct","server":"dns_direct"},
-	  {"clash_mode":"Global","server":"dns_proxy"},
-	  {"rule_set":"geosite-cn","server":"dns_direct"},
-	  {"rule_set":"geosite-geolocation-!cn","server":"dns_proxy"}
+      
+      {"clash_mode":"Direct","action":"route","server":"dns_direct"},
+      {"clash_mode":"Global","action":"route","server":"dns_proxy"},
+      {"rule_set":"geosite-cn","action":"route","server":"dns_direct"},
+      {"rule_set":"geosite-geolocation-!cn","action":"route","server":"dns_proxy"},
+      {"rule_set":"ads","action":"reject","method":"drop"}
     ],
     "final": "dns_proxy",
     "strategy": "ipv4_only"
