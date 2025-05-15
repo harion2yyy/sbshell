@@ -27,10 +27,10 @@
     ],
     "rules": [
       {"outbound":"any","server":"dns_direct","disable_cache":true},
-	  {"clash_mode":"Direct","server":"dns_direct"},
-	  {"clash_mode":"Global","server":"dns_proxy"},
-	  {"rule_set":"geosite-cn","server":"dns_direct"},
-	  {"rule_set":"geosite-geolocation-!cn","server":"dns_proxy"}
+      {"clash_mode":"Direct","server":"dns_direct"},
+      {"clash_mode":"Global","server":"dns_proxy"},
+      {"rule_set":"geosite-cn","server":"dns_direct"},
+      {"rule_set":"geosite-geolocation-!cn","server":"dns_proxy"}
     ],
     "final": "dns_proxy",
     "strategy": "ipv4_only"
@@ -270,10 +270,10 @@
         ],
         "outbound": "🎥 海外媒体"
       },
-	  {
-		"rule_set": "geosite-chat", 
-		"outbound": "🤖 OpenAI"
-	  },
+      {
+        "rule_set": "geosite-chat", 
+        "outbound": "🤖 OpenAI"
+      },
       {
         "rule_set": [
           "geosite-proxy",
@@ -313,13 +313,13 @@
         "url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/proxy.srs",
         "download_detour": "🎯 全球直连"
       },
-	  { 
-		"tag": "geosite-chat", 
-		"type": "remote", 
-		"format": "binary", 
-		"url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs", 
-		"download_detour": "🎯 全球直连" 
-	  },
+      { 
+        "tag": "geosite-chat", 
+        "type": "remote", 
+        "format": "binary", 
+        "url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs", 
+        "download_detour": "🎯 全球直连" 
+      },
       {
         "tag": "geosite-google",
         "type": "remote",
@@ -346,7 +346,7 @@
         "type": "remote",
         "format": "binary",
         "url": "https://ghcf.harion2y.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs",
-        "download_detour": "🚀 节点选择"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geosite-microsoft",
