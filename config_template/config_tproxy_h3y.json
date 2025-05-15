@@ -361,49 +361,49 @@
         "tag": "geosite-github",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-github.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-github.srs"
       },
       {
         "tag": "geoip-google",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs"
       },
       {
         "tag": "geosite-google",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs"
       },
       {
         "tag": "geosite-microsoft",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs"
       },
       {
         "tag": "geosite-openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-openai.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-openai.srs"
       },
       {
         "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs"
       },
       {
         "tag": "geosite-telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs"
       },
       {
         "tag": "geoip-twitter",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-twitter.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-twitter.srs"
       },
       {
         "tag": "geosite-twitter",
@@ -415,19 +415,19 @@
         "tag": "geosite-youtube",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-youtube.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-youtube.srs"
       },
       {
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.github.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs"
+        "url": "https://ghcf.harion2y.cc/https://raw.github.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs"
       }
     ]
   }
