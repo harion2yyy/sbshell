@@ -241,7 +241,7 @@
         "outbound": "GLOBAL"
       },
       {
-        "domain": [
+        "domain_keyword": [
           "clash.razord.top",
           "yacd.metacubex.one",
           "yacd.haishan.me",
