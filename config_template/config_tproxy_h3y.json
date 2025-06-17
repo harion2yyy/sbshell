@@ -281,6 +281,12 @@
         "outbound": "🎥 海外媒体"
       },
       {
+        "rule_set": [
+          "nintendo"
+        ],
+        "outbound": "🎮 任天堂"
+      },
+      {
 	"rule_set": "geosite-chat", 
 	"outbound": "🤖 OpenAI"
       },
@@ -302,12 +308,6 @@
           "geoip-apple"
         ],
         "outbound": "🪟 微软苹果"
-      },
-      {
-        "rule_set": [
-          "nintendo"
-        ],
-        "outbound": "🎮 任天堂"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
