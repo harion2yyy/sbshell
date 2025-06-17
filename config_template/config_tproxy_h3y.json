@@ -296,6 +296,12 @@
         "outbound": "🪟 微软苹果"
       },
       {
+        "rule_set": [
+          "nintendo"
+        ],
+        "outbound": "🪟 微软苹果"
+      },
+      {
         "rule_set": "geosite-geolocation-!cn",
         "outbound": "🚀 节点选择"
       },
