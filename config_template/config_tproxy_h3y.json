@@ -114,6 +114,14 @@
       ]
     },
     {
+      "tag": "🎮 任天堂",
+      "type": "selector",
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择"
+      ]
+    },
+    {
       "tag": "🐠 漏网之鱼",
       "type": "selector",
       "outbounds": [
@@ -272,10 +280,10 @@
         ],
         "outbound": "🎥 海外媒体"
       },
-	  {
-		"rule_set": "geosite-chat", 
-		"outbound": "🤖 OpenAI"
-	  },
+      {
+	"rule_set": "geosite-chat", 
+	"outbound": "🤖 OpenAI"
+      },
       {
         "rule_set": [
           "geosite-proxy",
@@ -299,7 +307,7 @@
         "rule_set": [
           "nintendo"
         ],
-        "outbound": "🪟 微软苹果"
+        "outbound": "🎮 任天堂"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
