@@ -4,7 +4,7 @@
    "servers": [
      {"tag": "local", "type": "https", "server": "223.5.5.5"},
      {"tag": "dns_local", "type": "h3", "server": "dns.alidns.com", "domain_resolver": "local"},
-     {"tag": "dns_proxy", "type": "https", "server": "1.1.1.1", "detour": "🚀 节点选择", "domain_resolver": {"server": "ali", "strategy": "ipv4_only", "client_subnet": "113.105.208.188"} }
+     {"tag": "dns_proxy", "type": "https", "server": "1.1.1.1", "detour": "🚀 节点选择", "domain_resolver": {"server": "dns_local", "strategy": "ipv4_only", "client_subnet": "113.105.208.188"} }
     ],
    "rules": [
       {"clash_mode": "direct", "server": "dns_local"},
