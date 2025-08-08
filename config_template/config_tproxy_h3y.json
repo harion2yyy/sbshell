@@ -2,7 +2,7 @@
  "dns": 
  {
    "servers": [
-     {"tag": "local", "type": "local"},
+     {"tag": "local", "type": "udp", "server": "223.5.5.5"},
      {"tag": "dns_local", "type": "https", "server": "dns.alidns.com", "domain_resolver": {"server": "local", "strategy": "ipv4_only", "client_subnet": "113.105.208.188"} },
      {"tag": "dns_proxy", "type": "https", "server": "1dot1dot1dot1.cloudflare-dns.com", "detour": "🚀 节点选择", "domain_resolver": {"server": "local", "strategy": "ipv4_only", "client_subnet": "113.105.208.188"} }
     ],
@@ -107,7 +107,7 @@
   },
     "log": {
     "disabled": false,
-    "level": "info",
+    "level": "error",
     "timestamp": true
   },
   
@@ -116,7 +116,7 @@
       "external_controller": "0.0.0.0:9095",
       "external_ui": "/etc/sing-box/ui",
       "secret": "",
-      "external_ui_download_url": "https://ghcf.harion2y.cn/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_url": "https://ghcf.harion2y.cn/https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
       "external_ui_download_detour": "➡️ 全球直连",
       "default_mode": "rule"
     },
