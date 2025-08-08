@@ -2,19 +2,19 @@
  "dns": 
  {
    "servers": [
-     {"tag": "local", "type": "udp", "server": "114.114.114.114"},
-     {"tag": "public", "type": "udp", "server": "223.5.5.5"},
-     {"tag": "foreign", "type": "udp", "server": "8.8.8.8"}
+     {"tag": "local", "type": "dhcp"},
+     {"tag": "dns_local", "type": "https", "server": "dns.alidns.com", "domain_resolver": {"server": "local", "strategy": "ipv4_only", "client_subnet": "113.105.208.188"} },
+     {"tag": "dns_proxy", "type": "https", "server": "1dot1dot1dot1.cloudflare-dns.com", "detour": "🚀 节点选择", "domain_resolver": {"server": "local", "strategy": "ipv4_only", "client_subnet": "113.105.208.188"} }
     ],
    "rules": [
       {"clash_mode": "direct", "server": "local"},
-      {"clash_mode": "global", "server": "foreign"},
-      {"query_type": "HTTPS","action": "reject"},
-      {"domain_suffix": ["services.googleapis.cn", "googleapis.cn", "xn--ngstr-lra8j.com"],  "server": "foreign"},
-      {"rule_set": ["geosite-cn", "geosite-private", "geosite-microsoft@cn", "geosite-apple@cn"], "server": "local"}
+      {"clash_mode": "global", "server": "dns_proxy"},
+      {"rule_set": "geosite-geolocation-!cn",  "server": "dns_proxy"},
+      {"rule_set": ["geosite-cn", "geosite-private", "geosite-microsoft@cn", "geosite-apple@cn"], "server": "dns_local"}
     ],
-   "final": "foreign",
+   "final": "dns_proxy",
    "strategy": "ipv4_only",
+   "client_subnet": "113.105.208.188",
    "independent_cache": true
 },
 
@@ -103,7 +103,7 @@
     "final": "🐠 漏网之鱼",
     "auto_detect_interface": true,
     "default_mark": 666,
-    "default_domain_resolver": {"server": "public"}
+    "default_domain_resolver": {"server": "local", "strategy": "ipv4_only","client_subnet": "113.105.208.188"}
   },
     "log": {
     "disabled": false,
