@@ -2,9 +2,8 @@
  "dns": 
  {
    "servers": [
-     {"tag": "local", "type": "local"},
-     {"tag": "dns_local", "type": "https", "server": "dns.alidns.com", "domain_resolver": {"server": "local", "strategy": "ipv4_only", "client_subnet": "113.105.208.188"} },
-     {"tag": "dns_proxy", "type": "https", "server": "1dot1dot1dot1.cloudflare-dns.com", "detour": "🚀 节点选择", "domain_resolver": {"server": "local", "strategy": "ipv4_only", "client_subnet": "113.105.208.188"} }
+     {"tag": "dns_local", "type": "https", "server": "223.5.5.5", "domain_resolver": {"server": "local", "strategy": "ipv4_only", "client_subnet": "113.105.208.188"} },
+     {"tag": "dns_proxy", "type": "https", "server": "1.1.1.1", "detour": "🚀 节点选择", "domain_resolver": {"server": "local", "strategy": "ipv4_only", "client_subnet": "113.105.208.188"} }
     ],
    "rules": [
       {"clash_mode": "direct", "server": "dns_local"},
@@ -103,7 +102,7 @@
     "final": "🐠 漏网之鱼",
     "auto_detect_interface": true,
     "default_mark": 666,
-    "default_domain_resolver": {"server": "local", "strategy": "ipv4_only","client_subnet": "202.96.128.86"}
+    "default_domain_resolver": {"server": "dns_local", "strategy": "ipv4_only","client_subnet": "202.96.128.86"}
   },
     "log": {
     "disabled": false,
