@@ -83,8 +83,8 @@
       { "tag": "geosite-proxymedia", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs", "download_detour": "➡️ 全球直连" },
 
       
-      { "tag": "geosite-apple@cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple@cn.srs", "download_detour": "➡️ 全球直连" },
-      { "tag": "geosite-microsoft@cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geo/geosite/microsoft@cn.json", "download_detour": "➡️ 全球直连" },
+      { "tag": "geosite-apple@cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple%40cn.srs", "download_detour": "➡️ 全球直连" },
+      { "tag": "geosite-microsoft@cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geo/geosite/microsoft%40cn.json", "download_detour": "➡️ 全球直连" },
       { "tag": "geosite-onedrive", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/onedrive.srs", "download_detour": "➡️ 全球直连" },
       { "tag": "geosite-geolocation-!cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs", "download_detour": "➡️ 全球直连" },
       { "tag": "geosite-cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs", "download_detour": "➡️ 全球直连" },
