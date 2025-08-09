@@ -4,13 +4,13 @@
    "servers": [
      {"tag": "local", "type": "https", "server": "223.5.5.5"},
      {"tag": "dns_local", "type": "h3", "server": "dns.alidns.com", "domain_resolver": "local"},
-     {"tag": "dns_proxy", "type": "https", "server": "1.1.1.1", "detour": "🚀 节点选择"}
+     {"tag": "dns_proxy", "type": "h3", "server": "dns.google", "domain_resolver": "local", "detour": "🚀 节点选择"}
     ],
    "rules": [
       {"clash_mode": "direct", "server": "dns_local"},
       {"clash_mode": "global", "server": "dns_proxy"},
       {"rule_set": "geosite-geolocation-!cn",  "server": "dns_proxy"},
-      {"rule_set": ["geosite-cn", "geosite-private", "geosite-microsoft@cn", "geosite-apple@cn"], "server": "dns_local"}
+      {"rule_set": ["geosite-cn", "geosite-private", "geosite-microsoft@cn", "geosite-apple@cn", "geosite-onedrive", "geosite-cdn"], "server": "dns_local"}
     ],
    "final": "dns_proxy",
    "strategy": "ipv4_only",
