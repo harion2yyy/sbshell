@@ -66,7 +66,7 @@
      {"rule_set": "nintendo", "outbound": "🎮 任天堂"},
      {"rule_set": "geosite-chat", "outbound": "🤖 OpenAI"},
 
-     {"rule_set": ["geosite-geolocation-!cn", "geosite-global"], "outbound": "🚀 节点选择"},
+     {"rule_set": ["geosite-global", "geosite-geolocation-!cn"], "outbound": "🚀 节点选择"},
      {"rule_set": ["geoip-cn", "geosite-cn"], "outbound": "➡️ 全球直连"}
    ],
     
