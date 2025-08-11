@@ -69,7 +69,7 @@
      {"rule_set": ["geoip-cn", "geosite-cn"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4", "client_subnet": "113.105.208.0/24"},
           
      {"rule_set": ["geosite-private", "geoip-private"], "outbound": "➡️ 全球直连"},
-     {"rule_set": ["geosite-proxy"], "outbound": "🍀 海外代理"},
+     {"rule_set": ["geosite-proxy", "geosite-linkedin"], "outbound": "🍀 海外代理"},
      {"rule_set": ["geosite-apple@cn", "geoip-apple", "geosite-microsoft@cn", "geosite-onedrive", "geosite-cdn", "geoip-cdn"], "outbound": "🪟 微软苹果CDN"},
      {"rule_set": ["geosite-proxymedia", "geoip-proxymedia", "geosite-telegram", "geoip-telegram"], "outbound": "🎥 海外媒体"},
      {"rule_set": "nintendo", "outbound": "🎮 任天堂"},
@@ -84,25 +84,25 @@
       { "tag": "geosite-global", "type": "remote", "format": "source", "url": "https://ruleset.skk.moe/sing-box/non_ip/global.json", "download_detour": "➡️ 全球直连" },
       { "tag": "geosite-proxymedia", "type": "remote", "format": "source", "url": "https://ruleset.skk.moe/sing-box/non_ip/stream.json", "download_detour": "➡️ 全球直连" },
       { "tag": "geosite-telegram", "type": "remote", "format": "source", "url": "https://ruleset.skk.moe/sing-box/non_ip/telegram.json", "download_detour": "➡️ 全球直连" },    
-      { "tag": "geosite-geolocation-!cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs", "download_detour": "➡️ 全球直连" },
+      { "tag": "geosite-geolocation-!cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-geolocation-!cn.srs", "download_detour": "➡️ 全球直连" },
+      { "tag": "geosite-linkedin", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-linkedin.srs", "download_detour": "➡️ 全球直连" },
       
       { "tag": "geosite-cdn", "type": "remote", "format": "source", "url": "https://ruleset.skk.moe/sing-box/non_ip/cdn.json", "download_detour": "➡️ 全球直连" },
       { "tag": "geoip-cdn", "type": "remote", "format": "source", "url": "https://ruleset.skk.moe/sing-box/ip/cdn.json", "download_detour": "➡️ 全球直连" },
       
       { "tag": "geosite-apple@cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-apple@cn.srs", "download_detour": "➡️ 全球直连" },
       { "tag": "geosite-microsoft@cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-microsoft@cn.srs", "download_detour": "➡️ 全球直连" },
-      { "tag": "geosite-onedrive", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/onedrive.srs", "download_detour": "➡️ 全球直连" },
-      { "tag": "geosite-cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs", "download_detour": "➡️ 全球直连" },
+      { "tag": "geosite-onedrive", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-onedrive.srs", "download_detour": "➡️ 全球直连" },
+      { "tag": "geosite-cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-cn.srs", "download_detour": "➡️ 全球直连" },
       { "tag": "geosite-private", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/harion2yyy/meta-rules-dat/refs/heads/singbox-patch1/geo/geosite/privateh3y.json", "download_detour": "➡️ 全球直连" },
       
-      { "tag": "nintendo", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/senshinya/singbox_ruleset/refs/heads/main/rule/Nintendo/Nintendo.srs", "download_detour": "➡️ 全球直连" },    
+      { "tag": "nintendo", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-nintendo.srs", "download_detour": "➡️ 全球直连" },    
       { "tag": "ads", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/REIJI007/AdBlock_Rule_For_Sing-box/main/adblock_reject.srs", "download_detour": "➡️ 全球直连" },
             
       { "tag": "geoip-telegram", "type": "remote", "format": "source", "url": "https://ruleset.skk.moe/sing-box/ip/telegram.json", "download_detour": "➡️ 全球直连" },     
       { "tag": "geoip-proxymedia", "type": "remote", "format": "source", "url": "https://ruleset.skk.moe/sing-box/ip/stream.json", "download_detour": "➡️ 全球直连" },     
-      { "tag": "geoip-apple", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs", "download_detour": "➡️ 全球直连" },
-      { "tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "➡️ 全球直连" },
-      { "tag": "geoip-private", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs", "download_detour": "➡️ 全球直连" }
+      { "tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geoip/geoip-cn.srs", "download_detour": "➡️ 全球直连" },
+      { "tag": "geoip-private", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geoip/geoip-private.srs", "download_detour": "➡️ 全球直连" }
     ],
     "final": "🐠 漏网之鱼",
     "auto_detect_interface": true,
