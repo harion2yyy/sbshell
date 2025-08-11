@@ -59,7 +59,7 @@
      {"clash_mode": "direct", "outbound": "➡️ 全球直连"},
      {"clash_mode": "global", "outbound": "GLOBAL"},
      {"rule_set": "ads", "action": "reject"},
-     {"rule_set": ["geosite-private", "geoip-private"], "action": "resolve", "server": "cloudflare", "strategy": "prefer_ipv4", "outbound": "➡️ 全球直连"},
+     {"rule_set": ["geosite-private", "geoip-private"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4", "outbound": "➡️ 全球直连"},
      {"rule_set": ["geosite-proxy"], "outbound": "🍀 海外代理"},
      {"rule_set": ["geosite-apple@cn", "geoip-apple", "geosite-microsoft@cn", "geosite-onedrive", "geosite-cdn", "geoip-cdn"], "outbound": "🪟 微软苹果CDN"},
      {"rule_set": ["geosite-proxymedia", "geoip-proxymedia", "geosite-telegram", "geoip-telegram"], "outbound": "🎥 海外媒体"},
@@ -67,7 +67,7 @@
      {"rule_set": "geosite-chat", "outbound": "🤖 OpenAI"},
 
      {"rule_set": ["geosite-global", "geosite-geolocation-!cn"], "outbound": "🚀 节点选择"},
-     {"rule_set": ["geoip-cn", "geosite-cn"], "action": "resolve", "server": "cloudflare", "strategy": "prefer_ipv4", "outbound": "➡️ 全球直连"}
+     {"rule_set": ["geoip-cn", "geosite-cn"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4", "outbound": "➡️ 全球直连"}
    ],
     
    "rule_set": [
