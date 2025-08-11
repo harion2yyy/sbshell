@@ -61,7 +61,7 @@
      {"rule_set": "ads", "action": "reject"},
      {"rule_set": ["geosite-private", "geoip-private"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4", "client_subnet": "113.105.208.0/24"},
      {"rule_set": ["geosite-proxy"], "action": "resolve", "server": "dns_proxy", "strategy": "ipv4_only", "client_subnet": "113.105.208.0/24"},
-     {"rule_set": ["geosite-apple@cn", "geoip-apple", "geosite-microsoft@cn", "geosite-onedrive", "geosite-cdn", "geoip-cdn"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4",, "client_subnet": "113.105.208.0/24"},
+     {"rule_set": ["geosite-apple@cn", "geoip-apple", "geosite-microsoft@cn", "geosite-onedrive", "geosite-cdn", "geoip-cdn"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4", "client_subnet": "113.105.208.0/24"},
      {"rule_set": ["geosite-proxymedia", "geoip-proxymedia", "geosite-telegram", "geoip-telegram"], "action": "resolve", "server": "dns_proxy", "strategy": "ipv4_only", "client_subnet": "113.105.208.0/24"},
      {"rule_set": "nintendo", "action": "resolve", "server": "dns_proxy", "strategy": "ipv4_only", "client_subnet": "113.105.208.0/24"},
      {"rule_set": ["geosite-global", "geosite-geolocation-!cn"], "action": "resolve", "server": "dns_proxy", "strategy": "prefer_ipv4", "client_subnet": "113.105.208.0/24"},
