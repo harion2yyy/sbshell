@@ -69,11 +69,11 @@
      {"rule_set": ["geosite-cn"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4", "client_subnet": "113.105.208.0/24"},
           
      {"rule_set": ["geosite-private", "geoip-private"], "outbound": "➡️ 全球直连"},
+     {"rule_set": "geosite-chat", "outbound": "🤖 OpenAI"},
      {"rule_set": ["geosite-proxy", "geosite-linkedin"], "outbound": "🍀 海外代理"},
      {"rule_set": ["geosite-apple@cn", "geosite-microsoft@cn", "geosite-onedrive", "geosite-cdn", "geoip-cdn"], "outbound": "🪟 微软苹果CDN"},
      {"rule_set": ["geosite-proxymedia", "geoip-proxymedia", "geosite-telegram", "geoip-telegram"], "outbound": "🎥 海外媒体"},
      {"rule_set": "nintendo", "outbound": "🎮 任天堂"},
-     {"rule_set": "geosite-chat", "outbound": "🤖 OpenAI"},
      {"rule_set": ["geosite-global", "geosite-geolocation-!cn"], "outbound": "🚀 节点选择"},
      {"rule_set": ["geoip-cn", "geosite-cn"], "outbound": "➡️ 全球直连"}
    ],
