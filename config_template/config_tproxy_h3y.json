@@ -9,8 +9,8 @@
    "rules": [
       {"clash_mode": "direct", "server": "dns_local"},
       {"clash_mode": "global", "server": "dns_proxy"},
-      {"rule_set":"geosite-cn","server": "dns_local"},
-	  {"rule_set":"geosite-geolocation-!cn", "server":"dns_proxy"}
+      {"rule_set":"geosite-cn","server":"dns_direct"},
+	  {"rule_set":"geosite-geolocation-!cn","server":"dns_proxy"}
     ],
    "final": "dns_proxy",
    "independent_cache": true
@@ -61,8 +61,8 @@
      {"clash_mode": "global", "outbound": "GLOBAL"},
      {"rule_set": "ads", "action": "reject"},
      {"rule_set": ["geosite-private", "geosite-speedtest"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4", "client_subnet": "113.105.208.0/24"},
-     {"rule_set": ["geosite-chat", "geosite-discord", "geoip-ai"], "action": "resolve", "server": "dns_proxy", "strategy": "ipv4_only", "client_subnet": "113.105.208.0/24"},
-     {"rule_set": ["geosite-proxymedia", "geoip-proxymedia", "geosite-linkedin", "geosite-telegram"], "action": "resolve", "server": "dns_proxy", "strategy": "ipv4_only", "client_subnet": "113.105.208.0/24"},
+     {"rule_set": ["geosite-chat", "geosite-discord"], "action": "resolve", "server": "dns_proxy", "strategy": "ipv4_only", "client_subnet": "113.105.208.0/24"},
+     {"rule_set": ["geosite-proxymedia", "geosite-linkedin", "geosite-telegram"], "action": "resolve", "server": "dns_proxy", "strategy": "ipv4_only", "client_subnet": "113.105.208.0/24"},
      {"rule_set": ["nintendo"], "action": "resolve", "server": "dns_proxy", "strategy": "ipv4_only", "client_subnet": "113.105.208.0/24"},
      {"rule_set": ["geosite-apple@cn", "geosite-microsoft@cn", "geosite-onedrive", "geosite-cdn"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4", "client_subnet": "113.105.208.0/24"},
      {"rule_set": ["geosite-proxy", "geosite-global", "geosite-geolocation-!cn"], "action": "resolve", "server": "dns_proxy", "strategy": "ipv4_only", "client_subnet": "113.105.208.0/24"},
