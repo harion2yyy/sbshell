@@ -114,7 +114,7 @@
   },
     "log": {
     "disabled": false,
-    "level": "error",
+    "level": "debug",
     "timestamp": true
   },
   
