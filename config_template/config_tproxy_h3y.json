@@ -9,8 +9,8 @@
    "rules": [
       {"clash_mode": "direct", "server": "dns_local"},
       {"clash_mode": "global", "server": "dns_proxy"},
-	  {"domain": ["*.harion2y.cn"], "query_type": ["AAAA"], "action": "reject" },
-      {"rule_set": "geosite-private", "query_type": ["AAAA"], "action": "reject" },
+	  {"domain": ["*.harion2y.cn"], "query_type": ["AAAA"], "server": "rcode://success" },
+      {"rule_set": "geosite-private", "query_type": ["AAAA"], "server": "rcode://success" },
       {"rule_set": "geosite-cn", "server": "dns_local"},
 	  {"rule_set": "geosite-geolocation-!cn", "server": "dns_proxy"}
     ],
