@@ -9,8 +9,9 @@
    "rules": [
       {"clash_mode": "direct", "server": "dns_local"},
       {"clash_mode": "global", "server": "dns_proxy"},
-      {"rule_set":"geosite-cn","server":"dns_local"},
-	  {"rule_set":"geosite-geolocation-!cn","server":"dns_proxy"}
+      {"rule_set": "geosite-private", "query_type": ["AAAA"], "action": "reject" },
+      {"rule_set": "geosite-cn", "server": "dns_local"},
+	  {"rule_set": "geosite-geolocation-!cn", "server": "dns_proxy"}
     ],
    "final": "dns_proxy",
    "independent_cache": true
@@ -67,15 +68,14 @@
      {"rule_set": ["geosite-apple@cn", "geosite-microsoft@cn", "geosite-onedrive", "geosite-cdn"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4", "client_subnet": "113.105.208.0/24"},
      {"rule_set": ["geosite-proxy", "geosite-global", "geosite-geolocation-!cn"], "action": "resolve", "server": "dns_proxy", "strategy": "ipv4_only", "client_subnet": "113.105.208.0/24"},
      {"rule_set": ["geosite-cn"], "action": "resolve", "server": "dns_local", "strategy": "prefer_ipv4", "client_subnet": "113.105.208.0/24"},
-     
+
      {"rule_set": ["geosite-private", "geosite-speedtest", "geoip-private"], "outbound": "➡️ 全球直连"},
      {"rule_set": ["geosite-chat", "geosite-discord", "geoip-ai"], "outbound": "🤖 OpenAI"},
      {"rule_set": ["geosite-proxymedia", "geoip-proxymedia", "geosite-linkedin", "geosite-telegram", "geoip-telegram"], "outbound": "🎥 海外媒体"},
      {"rule_set": ["nintendo"], "outbound": "🎮 任天堂"},
      {"rule_set": ["geosite-apple@cn", "geosite-microsoft@cn", "geosite-onedrive", "geosite-cdn", "geoip-cdn"], "outbound": "🪟 微软苹果CDN"},
-     
-     {"rule_set": ["geoip-cn", "geosite-cn"], "outbound": "➡️ 全球直连"},
-	 {"rule_set": ["geosite-proxy", "geosite-global", "geosite-geolocation-!cn"], "outbound": "🍀 海外代理"}
+     {"rule_set": ["geosite-proxy", "geosite-global", "geosite-geolocation-!cn"], "outbound": "🍀 海外代理"},
+     {"rule_set": ["geoip-cn", "geosite-cn"], "outbound": "➡️ 全球直连"}
    ],
 
    "rule_set": [
