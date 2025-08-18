@@ -12,8 +12,8 @@
       
       {"rule_set": ["geosite-private", "geosite-cn"], "server": "dns_local"},
 	  {"rule_set": ["geosite-private"], "query_type": ["AAAA"], "action": "predefined", "rcode": "REFUSED" },
-	  {"rule_set": "geosite-geolocation-!cn", "server": "dns_proxy"},
-	  {"rule_set": ["eosite-geolocation-!cn"], "query_type": ["AAAA"], "action": "predefined", "rcode": "REFUSED" }
+	  {"rule_set": ["geosite-geolocation-!cn"], "server": "dns_proxy"},
+	  {"rule_set": ["geosite-geolocation-!cn"], "query_type": ["AAAA"], "action": "predefined", "rcode": "REFUSED" }
     ],
    "final": "dns_proxy",
    "strategy": "ipv4_only",
