@@ -60,7 +60,10 @@
    [
      {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
      {"type": "logical", "mode": "or", "rules": [{"port": 53}, {"protocol": "dns"}], "action": "hijack-dns"},
-     {"type": "logical", "mode": "and", "rules": [{"network": "udp"}, {"port": 443}, {"protocol": "quic"}], "action": "reject"},
+     
+     { "network": "udp", "port": 443, "action": "reject" },
+     { "protocol": "quic", "action": "reject" },
+     
      {"ip_is_private": true, "outbound": "➡️ 全球直连"},
      {"clash_mode": "direct", "outbound": "➡️ 全球直连"},
      {"clash_mode": "global", "outbound": "GLOBAL"},
