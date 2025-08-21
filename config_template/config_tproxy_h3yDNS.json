@@ -3,7 +3,7 @@
  {
    "servers": [
      {"tag": "local", "type": "udp", "server": "223.5.5.5"},
-     {"tag": "dns_local", "type": "https", "server": "dns.alidns.com", "domain_resolver": {"server": "local", "strategy": "prefer_ipv4" },
+     {"tag": "dns_local", "type": "https", "server": "dns.alidns.com", "domain_resolver": {"server": "local", "strategy": "prefer_ipv4"} },
      {"tag": "dns_proxy", "type": "https", "server": "dns.google", "domain_resolver": {"server": "local", "strategy": "prefer_ipv4", "client_subnet": "113.105.208.0/24"}, "detour": "🚀 节点选择"}
     ],
    "rules": [
