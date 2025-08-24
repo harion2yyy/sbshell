@@ -61,8 +61,8 @@
      {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
      {"type": "logical", "mode": "or", "rules": [{"port": 53}, {"protocol": "dns"}], "action": "hijack-dns"},
      
-     { "network": "udp", "port": 443, "action": "reject" },
-     { "protocol": "quic", "action": "reject" },
+     {"rule_set": ["geosite-google", "geosite-proxy", "geosite-global", "geosite-geolocation-!cn"], "protocol": "quic", "action": "reject"},
+     {"rule_set": ["geosite-youtube", "geosite-proxy", "geosite-global", "geosite-geolocation-!cn"], "network": "udp", "port": 443, "action": "reject"},
      
      {"ip_is_private": true, "outbound": "➡️ 全球直连"},
      {"clash_mode": "direct", "outbound": "➡️ 全球直连"},
