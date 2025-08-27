@@ -75,7 +75,7 @@
      {"rule_set": ["nintendo"], "outbound": "🎮 任天堂"},
      {"rule_set": ["geosite-apple@cn", "geosite-microsoft@cn", "geosite-onedrive"], "outbound": "🪟 微软苹果国内媒体"},
      {"rule_set": ["geosite-proxy", "geosite-global", "geosite-geolocation-!cn"], "outbound": "🍀 海外代理"},
-     {"rule_set": ["geoip-cn", "geosite-cn", "geosite-cdn", "geoip-cdn"], "outbound": "➡️ 全球直连"}
+     {"rule_set": ["geoip-cn", "geosite-cn"], "outbound": "➡️ 全球直连"}
    ],
 
    "rule_set": [
@@ -91,7 +91,7 @@
       { "tag": "geosite-google", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-google.srs", "download_detour": "➡️ 全球直连" },
       { "tag": "geosite-github", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-github.srs", "download_detour": "➡️ 全球直连" },
       
-      { "tag": "geosite-cdn", "type": "remote", "format": "source", "url": "https://ruleset.skk.moe/sing-box/non_ip/cdn.json", "download_detour": "➡️ 全球直连" },
+      { "tag": "", "type": "remote", "format": "source", "url": "https://ruleset.skk.moe/sing-box/non_ip/cdn.json", "download_detour": "➡️ 全球直连" },
       { "tag": "geoip-cdn", "type": "remote", "format": "source", "url": "https://ruleset.skk.moe/sing-box/ip/cdn.json", "download_detour": "➡️ 全球直连" },
 
       { "tag": "geosite-speedtest", "type": "remote", "format": "binary", "url": "https://ghcf.harion2y.cn/https://raw.githubusercontent.com/lyc8503/sing-box-rules/refs/heads/rule-set-geosite/geosite-speedtest.srs", "download_detour": "➡️ 全球直连" },      
